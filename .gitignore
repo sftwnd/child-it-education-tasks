@@ -30,6 +30,13 @@
 *.exe
 *.out
 *.app
+*.o
+*.swp 
+
+*.dSYM
+
+# Visual Studio
+.vscode
 
 # Java
 
