@@ -64,3 +64,6 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+# Eclude builded binaries
+bitmap_patterns_7a1
+bitmap_patterns_7a2
