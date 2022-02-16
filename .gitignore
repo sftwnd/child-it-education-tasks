@@ -35,6 +35,8 @@
 
 *.dSYM
 
+~$*
+
 # Visual Studio
 .vscode
 
