@@ -15,9 +15,11 @@ int main() {
         else n++;
     }
     long N = 1 << n; // Кол-во вариантов получения %OST=0 только из %OST множества (включая пустое)
-    long cnt[] = {N, 0, 0};
+    long* cnt = new long[size];
+    for (int i=0; i<size; i++) cnt[i] = 0;
+    cnt[0] = 1;
     for (int i=0; i<m; i++) {
-        long nw[] = {0, 0, 0};
+        long* nw = new long[size];
         int a = arr[i];
         for (int j=0; j<OST; j++) {
             nw[j] = cnt[(OST+j-a)%OST];
