@@ -11,9 +11,11 @@ int main() {
         cin >> d;
         arr[i] = d % OST;
     }
-    long cnt[] = {1, 0, 0};
+    unsigned long long* cnt = new unsigned long long[OST];
+    for (int i=0; i<size; i++) cnt[i] = 0;
+    cnt[0] = 1;
     for (int i=0; i<size; i++) {
-        long nw[] = {0, 0, 0};
+        unsigned long long* nw = new unsigned long long[OST];
         int a = arr[i];
         for (int j=0; j<OST; j++) {
             nw[j] = cnt[(OST+j-a)%OST];
