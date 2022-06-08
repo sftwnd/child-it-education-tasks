@@ -17,7 +17,7 @@ int main() {
     long N = 1 << n; // Кол-во вариантов получения %OST=0 только из %OST множества (включая пустое)
     long* cnt = new long[size];
     for (int i=0; i<size; i++) cnt[i] = 0;
-    cnt[0] = 1;
+    cnt[0] = N;
     for (int i=0; i<m; i++) {
         long* nw = new long[size];
         int a = arr[i];
